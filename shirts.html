@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Kings - Shirts</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #333;
+        }
+
+        .navbar ul li {
+            position: relative;
+            margin-right: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+        }
+
+        .navbar ul li:hover > a {
+            background: #555;
+        }
+
+        .navbar ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #444;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        .navbar ul li:hover ul {
+            display: block;
+        }
+
+        .navbar ul li ul li {
+            width: 150px;
+        }
+
+        .navbar ul li ul li a {
+            padding: 10px;
+            color: white;
+            background: none;
+        }
+
+        .navbar ul li ul li a:hover {
+            background: #555;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            color: #777;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            display: block;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            color: #333;
+            margin: 15px 0;
+            font-size: 24px;
+        }
+
+        .product p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shirts.html">Shirts</a></li>
+            <li><a href="tshirts.html">T-Shirts</a></li>
+            <li><a href="sweatshirts.html">Sweatshirts</a></li>
+            <li><a href="jackets.html">Jackets</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Shirts Collection</h1>
+        <p>Explore our exclusive collection of shirts tailored for every occasion.</p>
+
+        <div class="products">
+            <div class="product">
+                <img src="shirt1.jpg" alt="Classic White Shirt">
+                <h3>Classic White Shirt</h3>
+                <p>A timeless white shirt made from premium cotton.</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="shirt2.jpg" alt="Denim Casual Shirt">
+                <h3>Denim Casual Shirt</h3>
+                <p>A stylish denim shirt perfect for casual outings.</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="shirt3.jpg" alt="Striped Formal Shirt">
+                <h3>Striped Formal Shirt</h3>
+                <p>Look sharp at work with this striped formal shirt.</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
